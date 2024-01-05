@@ -1,0 +1,120 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+:root {
+        --color-primary:hsl(47, 88%, 63%);
+
+        --color-body-1:hsl(0, 0%, 100%);
+        --color-body-2:hsl(0, 0%, 50%);
+        --color-body-3:hsl(0, 0%, 7%);
+
+        --default-font-size:16px;
+}
+
+body {
+        font-family: 'Figtree', sans-serif;
+}
+
+.container {
+        width:1440px;
+        height: 100vh;
+        background-color: var(--color-primary);
+        display: flex;
+        flex-direction: column;
+}
+
+.card {
+        width: 400px;
+        height: 530px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-body-3);
+        border-radius: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+}
+
+.card-detail {
+        width: 400px;
+        height: max-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid var(--color-body-3);
+        background-color: var(--color-body-1);
+        border-radius: 30px;
+        padding: 20px;
+}
+
+/*-------- HEADINGS ---------*/
+.heading-secoundary {
+        background-color: var(--color-primary);
+        width: max-content;
+        margin: 20px 0px;
+        border-radius: 10px;
+}
+
+.heading-secoundary h2 {
+        color: var(--color-body-3);
+        font-size: 17px;
+        font-family: var(--default-font-family);
+        font-weight: 800;
+        padding: 13px;
+}
+
+.heading-primary {
+        color: var(--color-body-3);
+        font-weight: 800;
+        font-size: 20px;
+        padding: 10px 0px;
+        margin:15px 0px;
+}
+
+
+
+/*-------- PARAGRAPHS ---------*/
+
+.date {
+        font-size: var(--default-font-size);
+        color: var(--color-body-3);
+        text-transform: capitalize;
+        font-weight: 400;
+}
+
+
+
+.foundation-paragraph {
+        font-size: var(--default-font-size);
+        color: var(--color-body-2);
+}
+
+.user-name {
+        color: var(--color-body-3);
+        font-weight: 800;
+}
+
+
+/*-------- IMAGES ---------*/
+
+.card-detail img {
+        border-radius: 25px;
+}
+
+.profile img {
+        padding-right: 15px;
+}
+
+
+.profile {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+}
+
+
